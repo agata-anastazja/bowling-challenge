@@ -6,3 +6,8 @@ function Game(){
 Game.prototype.score = function(){
   return this._score;
 };
+
+Game.prototype.roll = function(number){
+  this._score += number;
+  return this._score;
+};

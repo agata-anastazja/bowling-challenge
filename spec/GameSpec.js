@@ -12,4 +12,10 @@ describe('Game',function(){
   it('starts at frame 1', function(){
     expect(game._frame).toEqual(1);
   });
+
+  it('consists of rolls', function(){
+    game.roll(2);
+    expect(game.score()).toEqual(2);
+  });
+
 });
